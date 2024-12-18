@@ -1,0 +1,202 @@
+body {
+  font-family: 'poppins', sans-serif;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=9d2ec9&c2=4e84cf&gt=l&gd=dbr
+*/
+background: #9D2EC9;
+background: linear-gradient(315deg, #9D2EC9, #4E84CF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  /* background-color: #ccc; */
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 720px;
+  text-align: center;
+  min-height:300px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card h1 {
+  margin-bottom: 20px;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #9D2EC9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  font-size:32px;
+  margin: 10px 0;
+}
+
+.options {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.navigation button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.navigation button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+
+.results {
+  text-align: left;
+  margin-top: 20px;
+  max-height: 420px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.result-item {
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  
+}
+
+.option {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.correct-answer {
+  font-weight: bold;
+  color: green;
+}
+
+.incorrect-answer {
+  font-weight: bold;
+  color: red;
+}
+.card .loading{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+}
+
+.card-questions{
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 720px;
+  min-height:300px ;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-questions p {
+  font-size:32px;
+  margin: 10px 0;
+}
+
+.card-results{
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 720px;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  flex-direction: column;
+  overflow: hidden; /* Prevents overflow outside the card */
+}
+
+.result-item .question{
+  font-size: 24px;
+}
+
+.card-results .results-header{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.card-results .results-header button{
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #9D2EC9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.card-results h2 {
+  margin: 0; /* Remove any default margin */
+  font-size: 32px; /* Adjust the font size */
+}
+
+.card-results .results-header button:hover{
+  background-color: #7E1C99;
+}
